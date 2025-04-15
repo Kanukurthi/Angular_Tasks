@@ -1,0 +1,74 @@
+<div class="container">
+  <nav class="navbar">
+    <ul>
+      
+      <li><a routerLink="/api/students" routerLinkActive="active">Student List</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-box">
+    <h2>{{ isEditMode ? 'Edit Student' : 'Student Registration' }}</h2>
+
+    <form #studentForm="ngForm" (ngSubmit)="submitForm()">
+      <div class="form-group">
+        <label for="id">Id</label>
+        <input
+          type="text"
+          id="id"
+          name="id"
+          [(ngModel)]="student.id"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          [(ngModel)]="student.name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="student.email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="course">Course</label>
+        <input
+          type="text"
+          id="course"
+          name="course"
+          [(ngModel)]="student.course"
+          required
+        />
+      </div>
+
+      <div class="form-group checkbox">
+        <label>
+          <input
+            type="checkbox"
+            name="enrolled"
+            [(ngModel)]="student.enrolled"
+          />
+          Enrolled
+        </label>
+      </div>
+
+      <button type="submit">
+        {{ isEditMode ? 'Update' : 'Submit' }}
+      </button>
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>
+

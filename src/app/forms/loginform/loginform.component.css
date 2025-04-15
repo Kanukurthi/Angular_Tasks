@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

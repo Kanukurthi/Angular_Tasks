@@ -1,0 +1,61 @@
+[
+      {
+        "id": 1,
+        "name": "Arun",
+        "email": "arun@gmail.com",
+        "course": "Angular",
+        "enrolled": true
+      },
+      {
+        "id": 2,
+        "name": "Bindu",
+        "email": "bindu@gmail.com",
+        "course": "React",
+        "enrolled": false
+      },
+      {
+        "id": 3,
+        "name": "Chary",
+        "email": "chary@gmail.com",
+        "course": "Vue",
+        "enrolled": true
+      },
+      {
+        "id": 4,
+        "name": "Deepika",
+        "email": "deepika@gmail.com",
+        "course": "Node.js",
+        "enrolled": true
+      },
+      {
+        "id": 5,
+        "name": "Elen",
+        "email": "elen@gmail.com",
+        "course": "Java",
+        "enrolled": false
+      },
+      {
+        "id": 6,
+        "name": "Flora",
+        "email": "flora@gmail.com",
+        "course": "Python",
+        "enrolled": true
+      },
+      {
+        "id": 7,
+        "name": "Ganesh",
+        "email": "ganesh@gmail.com",
+        "course": "Data Science",
+        "enrolled": false
+      },
+      {
+        "id": 8,
+        "name": "Hari",
+        "email": "hari@gmail.com",
+        "course": "Angular",
+        "enrolled": true
+      }
+     
+    ]
+  
+  

@@ -1,0 +1,46 @@
+.image{
+    max-height:50px;
+     max-width:50px;
+}
+
+
+.product-container{
+    display:flex;
+    margin:15px 0px;
+    padding:5px 5px;
+    border-radius:5px;
+}
+.image-container{
+    background-color:#fff;
+    height:70px;
+    width:70px;
+    padding:10px 0px;
+    text-align:center;
+}
+.detailContainer{
+    display:flex;
+    margin:0px 20px;
+
+}
+.name-container{
+    margin:0px 20px;
+}
+.details{
+    width:140px;
+}
+.options{
+    margin-right:50px;
+}
+/* ng-class css added */
+.available-class {
+    border: 2px solid green;
+    background-color: #d4f7d4; 
+  }
+  
+.not-available-class {
+    border: 2px solid red;
+    background-color: #f7d4d4; 
+  }
+.btn-spacing{
+    margin-right:10px;
+}

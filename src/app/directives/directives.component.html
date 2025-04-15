@@ -1,0 +1,36 @@
+<!-- ngFor Directive -->
+
+<div *ngFor="let productitem of products">
+   
+    <div class="product-container" [ngStyle]="{color: productitem.available==='Available'?'LightGreen':'#FF6666'}" 
+    [ngClass]="{'available-class':productitem.available==='Available','not-available-class':productitem.available!=='Available'}">
+     <div class="image-container"><img [src]="productitem.image" alt="" class="image"></div>
+     <div>
+         <div class="name-container">
+             <h6>{{productitem.name}}</h6>
+         </div>
+         <div class="detailContainer">
+ 
+             <!-- ngStyle  -->
+ 
+             <div class="details" [ngStyle]="{color: productitem.available === 'Available' ?'Green':'Red'} ">{{productitem.available}}</div>
+             <div class="details"><b>Price:</b>{{productitem.price}}</div>
+             <div class="details"><b>Color:</b>{{productitem.color}}</div>
+         </div>
+     </div>
+     <div class="options">
+         <!-- *ngIf -->
+     <button class="btn btn-warning" 
+               *ngIf="productitem.available !== 'NotAvailable'; else notifyme" 
+               [disabled]="productitem.available !== 'Available'"
+               (click)="buyNow(productitem)">Buy Now</button>
+     <ng-template #notifyme>
+         <button class="btn btn-danger" 
+                 [disabled]="productitem.available === 'Available'"
+                 (click)="notifyMe()">Notify Me</button>
+       </ng-template>
+    </div>
+  
+ </div>
+ </div>
+ 

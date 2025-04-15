@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>SignUp Form</h1>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" formControlName="username">
+        <span *ngIf="userForm.controls['username'].touched && userForm.controls['username'].invalid">
+          <p>Username is required and must have a minimum of 10 characters.</p>
+        </span>
+      </div>
+      
+      <div class="form-group">
+        <label for="useremail">Email</label>
+        <input type="email" id="useremail" formControlName="email">
+        <span *ngIf="userForm.controls['email'].touched && userForm.controls['email'].invalid">
+          <p>Email is required and must be a valid email.</p>
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password">
+        <span *ngIf="userForm.controls['password'].touched && userForm.controls['password'].invalid">
+          <p>Password is required and must contain at least one letter and one number.</p>
+        </span>
+      </div>
+   
+      <div class="form-group">
+        <label for="userphonenumber">PhoneNumber</label>
+        <div formArrayName="phonenumber">
+          <div *ngFor="let phone of phonenumber.controls; let i = index">
+            <input type="text" [formControlName]="i" placeholder="Enter phone number">
+            <button (click)="add()" class="btn btn-primary">Add</button>
+            <button (click)="remove(i)" class="btn btn-danger m-2">Remove</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>  
+      
+    </form>
+</div>
+
+

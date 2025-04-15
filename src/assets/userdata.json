@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "name": "Alice",
+      "designation": "Frontend Developer",
+      "project": "Food Ordering App",
+      "email": "alice.johnson@example.com",
+      "phone": "123-456-7890",
+      "location": "New York"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "designation": "Backend Developer",
+      "project": "Inventory Management System",
+      "email": "bob.smith@example.com",
+      "phone": "987-654-3210",
+      "location": "San Francisco"
+    },
+    {
+      "id": 3,
+      "name": "Carol",
+      "designation": "Full Stack Engineer",
+      "project": "E-Commerce Platform",
+      "email": "carol.white@example.com",
+      "phone": "555-123-4567",
+      "location": "Chicago"
+    },
+    {
+      "id": 4,
+      "name": "David",
+      "designation": "DevOps Engineer",
+      "project": "Cloud Infrastructure",
+      "email": "david.lee@example.com",
+      "phone": "321-654-0987",
+      "location": "Seattle"
+    },
+    {
+      "id": 5,
+      "name": "Elif",
+      "designation": "UI/UX Designer",
+      "project": "Healthcare Portal",
+      "email": "eva.martinez@example.com",
+      "phone": "444-222-1111",
+      "location": "Austin"
+    },
+    {
+      "id": 6,
+      "name": "Frank",
+      "designation": "QA Engineer",
+      "project": "Banking App",
+      "email": "frank.turner@example.com",
+      "phone": "222-333-4444",
+      "location": "Boston"
+    },
+    {
+      "id": 7,
+      "name": "Ganesh",
+      "designation": "Project Manager",
+      "project": "Logistics System",
+      "email": "grace.kim@example.com",
+      "phone": "999-888-7777",
+      "location": "Denver"
+    }
+  ]

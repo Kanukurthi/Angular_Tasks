@@ -1,0 +1,17 @@
+<div class="user-container">
+    <h2>Filtered Users</h2>
+  
+    <div *ngFor="let u of userinfo" class="card">
+      <img [src]="u.image" alt="{{ u.name }}" />
+      <span class="name">{{ u.name }}</span>
+      <a [routerLink]="['/usercard', u.id]" class="view-btn">View Profile</a>
+    </div>
+  
+    <ul>
+      <li><a class="a" [routerLink]="['/users']" [queryParams]="{ name: 'MiskoHevery' }">Name</a></li>
+      <li><a class="a" [routerLink]="['/users']" [queryParams]="{ city: 'Russia' }">City</a></li>
+      <li><a class="a" [routerLink]="['/users']" [queryParams]="{ email: 'James@gmail.com' }">Email</a></li>
+      <li><a class="a" [routerLink]="['/users']" [queryParams]="{ name: 'MiskoHevery', city: 'USA' }">Name & City</a></li>
+    </ul>
+  </div>
+  

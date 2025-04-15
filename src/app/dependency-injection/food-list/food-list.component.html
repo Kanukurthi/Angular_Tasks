@@ -1,0 +1,11 @@
+<h1 class="h1">Food Menu</h1>
+<div class="food-list">
+    <div  class="food-item" *ngFor="let food of foodItem">
+        <img [src]="food.image" alt="{{food.name}}" class="img">
+       
+        <p>Name: {{food.name}}</p>
+        <p>Category: {{food.category}}</p>
+        <p>Price :{{food.price}}</p>
+        <button (click)="addToCart(food)">Add to Cart</button>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<h1 class="heading">User Profiles with Lifecycle Hooks</h1>
+<div class="grid">
+  <div *ngFor="let users of userdata; let i = index">
+    <app-child [userinfo]="users"></app-child>
+    <button class="remove-btn" (click)="removeUser(i)">Remove</button>
+  </div>
+
+</div>

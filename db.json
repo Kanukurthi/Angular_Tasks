@@ -1,0 +1,39 @@
+{
+  "studentdata": [
+    {
+      "id": "4",
+      "name": "Deepika",
+      "email": "deepika@gmail.com",
+      "course": "Node.js",
+      "enrolled": true
+    },
+    {
+      "id": "5",
+      "name": "Elen",
+      "email": "elen@gmail.com",
+      "course": "Java",
+      "enrolled": false
+    },
+    {
+      "id": "6",
+      "name": "Flora",
+      "email": "flora@gmail.com",
+      "course": "Python",
+      "enrolled": true
+    },
+    {
+      "id": "8",
+      "name": "HariChandra",
+      "email": "hari@gmail.com",
+      "course": "react",
+      "enrolled": true
+    },
+    {
+      "id": 0,
+      "name": "",
+      "email": "",
+      "course": "",
+      "enrolled": false
+    }
+  ]
+}

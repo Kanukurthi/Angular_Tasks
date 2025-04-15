@@ -1,0 +1,21 @@
+
+
+  <div class="container">
+    <h1>Product Management</h1>
+  
+    <!-- Filter by Product Name -->
+    <input [(ngModel)]="searchQuery" placeholder="Search Products" class="filter-input" />
+  
+    <!-- Product List -->
+    <div *ngFor="let product of products | filter:searchQuery">
+      <div class="product-item">
+        <h2>{{ product.name | uppercase | reverse }}</h2>
+        <p>Category: {{ product.category }}</p>
+        <p>Price: {{ product.price | currency:'USD' }}</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <router-outlet></router-outlet>
+

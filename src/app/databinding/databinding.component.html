@@ -1,0 +1,18 @@
+<div class="header">
+    <div class="image">
+        <!-- used property binding [src]="source" -->
+        <img [src]="source" height="100%" width="100%" alt="A description of the background image">
+    </div>
+    <div class="slogan">
+        <!-- //string interpolation -->
+        <h2>{{getSlogan()}}</h2>
+   
+    </div>
+    <!-- //Two way Binding -->
+   <div class="search">
+    <label for="searchInput"><b>Search:</b></label>
+    <!-- <input type="text"  (input)="changeSearchValue($event)" id="searchInput" placeholder="Enter your search query" alt="this is description of text"> -->
+    <input type="text" id="searchinput"  placeholder="Enter your search query" (input)="changeSearchValue($event)" [(ngModel)]="searchValue">
+    <span>You searched for "{{searchValue}}</span>
+  </div>
+</div>  

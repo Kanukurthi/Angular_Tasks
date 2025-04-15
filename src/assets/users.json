@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "MiskoHevery",
+      "username": "Misko",
+      "descp": "I am Misko Hevery, creator of Angular. I helped start AngularJS at Google.",
+      "email": "misko@gmail.com",
+      "city": "USA",
+      "mobile": 9826738871,
+      "image": "/assets/user.jpg"
+    },
+    {
+      "id": 2,
+      "name": "James Gosling",
+      "username": "James",
+      "descp": "I created Java while working at Sun Microsystems.",
+      "email": "james@gmail.com",
+      "city": "London",
+      "mobile": 9891230981,
+      "image": "/assets/user6.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ryan Dahl",
+      "username": "Ryan",
+      "descp": "I developed Node.js, a JavaScript runtime on Chrome's V8 engine.",
+      "email": "ryan@gmail.com",
+      "city": "Russia",
+      "mobile": 8398408184,
+      "image": "/assets/user4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Brendan Eich",
+      "username": "Brendan",
+      "descp": "I created JavaScript in 10 days. Co-founded Mozilla.",
+      "email": "brendan@gmail.com",
+      "city": "San Francisco",
+      "mobile": 7788991122,
+      "image": "/assets/user7.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Guido van Rossum",
+      "username": "Guido",
+      "descp": "Creator of the Python programming language.",
+      "email": "guido@gmail.com",
+      "city": "Netherlands",
+      "mobile": 6677889900,
+      "image": "/assets/OIP.jpg"
+    }
+  ]
+  

@@ -1,0 +1,220 @@
+/* Container */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin: 80px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Validation Error Message */
+span p {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button Container */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Add Button */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Remove Button */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+
+/* Center the form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin:80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"],input[type="email"]{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Active Link */
+a.active {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* Center the form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin:5px;
+    cursor: pointer;
+  }
+  
+  form button[disabled] {
+    background-color: #dcdcdc;
+  }
+  
+  span p {
+    color: red;
+    font-size: 12px;
+  }
+  

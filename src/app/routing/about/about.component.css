@@ -1,0 +1,45 @@
+.about-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh; /* Fullscreen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-container h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px; /* Adds space below the title */
+  }
+  
+  .about-container h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adds space below the subheading */
+  }
+  
+  .about-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: center; /* Centers the paragraph text */
+    margin-bottom: 20px;
+  }
+  
+  .about-container ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding: 0; /* Removes any default padding */
+  }
+  
+  .about-container ul li {
+    margin-bottom: 10px;
+  }
+  

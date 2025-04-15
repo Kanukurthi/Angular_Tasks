@@ -1,0 +1,29 @@
+<div class="container mt-4">
+    <h2>Student List</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+          <th>Enrolled</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of studentlist">
+          <td>{{ s.id }}</td>
+          <td>{{ s.name }}</td>
+          <td>{{ s.email }}</td>
+          <td>{{ s.course }}</td>
+          <td>{{ s.enrolled ? 'Yes' : 'No' }}</td>
+          <td>
+            <button class="btn btn-warning btn-sm"  [routerLink]="['/api', 'students', s.id]">Edit</button>
+            <button class="btn btn-danger btn-sm" (click)="deleteStudent(s.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
