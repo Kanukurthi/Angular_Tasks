@@ -1,0 +1,18 @@
+<h3>Employee Form</h3>
+
+<p> EmployeeName</p>
+<input type="text" [value]="employeeName" placeholder="Employee Name" readonly>
+
+<p>EmployeeEmail</p>
+<input [(ngModel)]="email" placeholder="Enter your Email">
+<button (click)="sendEmail()">Send</button>
+
+<p>MobileNumber</p>
+<input [(ngModel)]="phone" placeholder="Enter Phone Number">
+
+<p>Gender</p>
+<input [(ngModel)]="gender" placeholder="Enter Gender">
+
+
+<ng-content></ng-content>
+

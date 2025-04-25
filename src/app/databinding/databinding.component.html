@@ -15,4 +15,8 @@
     <input type="text" id="searchinput"  placeholder="Enter your search query" (input)="changeSearchValue($event)" [(ngModel)]="searchValue">
     <span>You searched for "{{searchValue}}</span>
   </div>
+  <!-- //event binding -->
+  <div class="button-container">
+    <button (click)="handleButtonClick()">Click Me</button>
+</div>
 </div>  

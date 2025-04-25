@@ -13,11 +13,12 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ApiIntegrationComponent } from './api-integration/api-integration.component';
-import { AuthService } from './auth.service';
+
 import { StudentListComponent } from './api-integration/student-list/student-list.component';
 import { ModulesComponent } from './modules/modules.component';
-import { BookListComponent } from './modules/book-list/book-list.component';
-import { GenreListComponent } from './modules/genre-list/genre-list.component';
+import { AuthService } from './routing/auth.service';
+import { AgGridComponent } from './ag-grid/ag-grid.component';
+
 
 const routes: Routes = [ 
   { path: '', component: HomeComponent },
@@ -71,7 +72,10 @@ const routes: Routes = [
       }
     ]
   },
-  { path: '**', redirectTo: 'modules/books' }
+  {
+    path:'agGrid', component:AgGridComponent
+  }
+  
 
  
   

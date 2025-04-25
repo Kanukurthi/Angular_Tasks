@@ -1,0 +1,38 @@
+<div id="container">
+    <div id="parent">
+      <h2>Employee Portal</h2>
+  
+      <p> EmployeeName</p>
+      <input [(ngModel)]="name" placeholder="Enter Employee Name">
+  
+      <p>EmployeeEmail</p>
+      <input [value]="email" readonly placeholder="Email from Child">
+  
+      <p>EmployeeNumber</p>
+      <input [value]="phone" readonly placeholder="Phone from Child">
+  
+      <p>Gender</p>
+      <input [value]="gender" readonly placeholder="Gender from Child">
+  
+      <button (click)="getChildDetails()">Get Child Details</button>
+  
+      <p>5. From Service:</p>
+      <ul>
+        <li><strong>Name:</strong> {{ employeeDetails.name }}</li>
+        <li><strong>Gender:</strong> {{ employeeDetails.gender }}</li>
+        <li><strong>Location:</strong> {{ employeeDetails.location }}</li>
+        <li><strong>Note:</strong> {{ employeeDetails.purpose }}</li>
+      </ul>
+    </div>
+  
+    <div id="child">
+      <app-employee-form
+        [employeeName]="name"
+        (emailEvent)="email= $event"
+        #formRef>
+      
+        <p>This content is projected using <strong>ng-content</strong></p>
+      </app-employee-form>
+    </div>
+  </div>
+  

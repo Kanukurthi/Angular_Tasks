@@ -18,4 +18,9 @@ export class DatabindingComponent {
   changeSearchValue(eventData: Event) {
     this.searchValue = (<HTMLInputElement>eventData.target).value;
   }
+   // Method for the button click event binding
+   handleButtonClick() {
+    alert('Button clicked!'); // Alert message when button is clicked
+    console.log('Button was clicked');
+  }
 }

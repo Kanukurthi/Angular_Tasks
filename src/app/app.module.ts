@@ -33,6 +33,14 @@ import { CoreModule } from './modules/core/core.module';
 import { SharedModule } from './modules/shared/shared.module';
 import { BooksModule } from './modules/book-list/books/books.module';
 import { GenresModule } from './modules/genre-list/genres/genres.module';
+import { EmployeeComponent } from './comm-components/employee/employee.component';
+import { EmployeeFormComponent } from './comm-components/employee-form/employee-form.component';
+import { FooterComponent } from './comm-components/footer/footer.component';
+import { HeaderComponent } from './comm-components/header/header.component';
+import { AgGridComponent } from './ag-grid/ag-grid.component';
+
+import { ButtonCellRendererComponent } from './ag-grid/button-cell-renderer/button-cell-renderer.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 
@@ -55,6 +63,13 @@ import { GenresModule } from './modules/genre-list/genres/genres.module';
     ChildComponent,
     StudentListComponent,
     ModulesComponent,
+    EmployeeComponent,
+    EmployeeFormComponent,
+    FooterComponent,
+    HeaderComponent,
+    AgGridComponent,
+    
+    ButtonCellRendererComponent,
     
    
     
@@ -78,7 +93,9 @@ import { GenresModule } from './modules/genre-list/genres/genres.module';
     BooksModule,
     GenresModule,
     CoreModule,
-    SharedModule
+    SharedModule,
+    AgGridModule,
+  
     
     
 

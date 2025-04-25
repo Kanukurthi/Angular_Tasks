@@ -1,0 +1,25 @@
+#container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  
+  #parent, #child {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  input {
+    display: block;
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+  }
+  button {
+    margin-top: 10px;
+  }
+  

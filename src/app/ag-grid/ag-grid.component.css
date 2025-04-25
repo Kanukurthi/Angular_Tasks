@@ -1,0 +1,32 @@
+.ag-theme-quartz{
+    --ag-foreground-color:rgb(14,100,15);
+     --ag-background-color:rgb(241,247,255);
+     --ag-header-background-color:rgb(128,237,250);
+     --ag-row-hover-color:rgb(100,138,255);
+ 
+ }
+ /* ::ng-deep  */
+ ::ng-deep .yellow-cell{
+     background-color:rgb(100,150,100) !important;
+ }
+ /* ::ng-deep  */
+ ::ng-deep .red-row{ 
+     background-color:rgb(150,100,100) !important;
+ }
+ ::ng-deep .blue-row{
+     background-color:rgb(100,100,150) !important;
+ }
+ button {
+     background-color: #2196f3;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     font-size: 15px;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   button:hover {
+     background-color: #1976d2;
+   }

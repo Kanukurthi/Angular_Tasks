@@ -1,0 +1,28 @@
+<div style="background-color: #f0f4f8; min-height: 100vh; display: flex; flex-direction: column;">
+    <header style="background-color: #c0006a; color: white; padding: 1rem 0; text-align: center; margin: 12px;">
+      <h1>Cars AgGrid Application</h1>
+    </header>
+
+    <div style="text-align:center; margin-bottom: 10px;">
+      <button (click)="exportAsCSV()">Export to CSV</button>
+    </div>
+
+    <ag-grid-angular
+      #agGrid
+      [enableAdvancedFilter]="true"
+      class="ag-theme-quartz"
+      style="height: 500px"
+      [rowData]="rowData"
+      [columnDefs]="colDefs"
+      rowSelection="multiple"
+      [pagination]="pagination"
+      [rowClassRules]="rowClassRules"
+      [paginationPageSize]="paginationPageSize"
+      [paginationPageSizeSelector]="paginationPageSizeSelector"
+      [defaultColDef]="defaultColDef">
+    </ag-grid-angular>
+
+    <app-button-cell-renderer style="display: none"></app-button-cell-renderer>
+    <footer style="background-color: #c0006a;  color: white; text-align: center; padding: 1rem 0;">
+        © 2025 Cars AG Grid App
+      </footer>
